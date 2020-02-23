@@ -1,22 +1,27 @@
 import React, {Component} from 'react';
-import {Route, Switch} from "react-router";
+import {Route, Switch} from "react-router-dom";
 
+import Book from '../Book/Book';
 import Header from './Header';
 import Sider from './Sider';
 import {Layout} from "antd";
 
+
+
 const {Content} = Layout;
 
 export default class LayoutX extends Component {
+
     render() {
-        return <div>
+        const{history} = this.props;
+        return <div style={{height:100}}>
             <Header/>
-            <div className={'sider-n-content'}>
-                <Sider/>
-                <Content style={{width: '50%', minHeight: '700pt', padding: '10px', backgroundColor: '#fff'}}>
+            <div className="sider-n-content">
+                <Sider history={history}/>
+                <Content style={{width: '50%', padding: '10px', backgroundColor: '#fff' }}>
 
                     <Switch>
-                        {/*<Route exact={true} path="/" component={Home}/>*/}
+                        <Route path="/books" component={Book}/>
                         {/*<Route path="/other" component={Documents}/>*/}
                         {/*<Route path="/users" component={Users}/>*/}
                     </Switch>

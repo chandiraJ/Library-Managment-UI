@@ -13,6 +13,16 @@
   }
 }
 
+.sider-n-content{
+  min-height: 800px;
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-content: center;
+  flex-direction: row !important;
+  flex-flow: row !important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

@@ -1,6 +1,12 @@
 .thestyle{
     background-color: #033565;
+
 }
+
+/*.thestyle.sider{*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*}*/
 
 .nav-text{
     background-color: #033565;
@@ -32,4 +38,3 @@
     display: inline-block;
     border-left: 1px solid white;
 }
-
