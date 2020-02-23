@@ -1,0 +1,35 @@
+.thestyle{
+    background-color: #033565;
+}
+
+.nav-text{
+    background-color: #033565;
+}
+
+.footer{
+    background-color: #033565 !important;
+}
+
+/*.nav-text{*/
+/*    text-align: left !important;*/
+/*}*/
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+    background-color: #0d4f8c;
+}
+
+.ant-menu-item{
+    text-align: left;
+}
+
+.floatRight {
+    float: right;
+    display: inline-block;
+    border-left: 1px solid white;
+}
+.floatLeft{
+    float: left;
+    display: inline-block;
+    border-left: 1px solid white;
+}
+
