@@ -40,8 +40,8 @@ export default class extends Component {
                     <Icon type="book"/>
                     <span className="nav-text">Books</span>
                 </Menu.Item>
-                <Menu.Item key="other">
-                    <Icon type="video-camera"/>
+                <Menu.Item key="member">
+                    <Icon type="user"/>
                     <span className="nav-text">Members</span>
                 </Menu.Item>
                 <Menu.Item key="l">

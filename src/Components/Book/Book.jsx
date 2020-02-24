@@ -28,7 +28,7 @@ const columns = [
     }
 ];
 
-export default class Documents extends Component {
+export default class Book extends Component {
     constructor(props) {
         super(props);
 
@@ -46,7 +46,7 @@ export default class Documents extends Component {
             stitle: "",
             sauthor: ""
         }
-    }
+    };
 
     componentDidMount() {
         /**
@@ -168,7 +168,7 @@ export default class Documents extends Component {
                     this.setBooksState(data, false);
                 } else {
                     alert("No Books Found!")
-                    this.setBooksState(data, false);
+                    this.setBooksState(data = [], false);
                 }
             })
             .catch((err) => {

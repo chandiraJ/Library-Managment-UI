@@ -3,6 +3,7 @@ import {Route, Switch} from "react-router-dom";
 
 import Book from '../Book/Book';
 import Header from './Header';
+import Member from '../Member/Member';
 import Sider from './Sider';
 import {Layout} from "antd";
 
@@ -22,7 +23,7 @@ export default class LayoutX extends Component {
 
                     <Switch>
                         <Route path="/books" component={Book}/>
-                        {/*<Route path="/other" component={Documents}/>*/}
+                        <Route path="/member" component={Member}/>
                         {/*<Route path="/users" component={Users}/>*/}
                     </Switch>
                 </Content>
