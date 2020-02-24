@@ -9,14 +9,16 @@ import 'antd/dist/antd.css';
 import Login from './Components/Login/Login';
 import MainLayout from './Components/MainLayout/Layout';
 
-let logstat = sessionStorage.getItem("loging_status");
+let logstat = sessionStorage.getItem("login_status");
 // let logstat = true;
-if(logstat === "true"){
+if(logstat === 'true'){
     logstat = true;
+} else {
+    logstat = false
 }
 
 function App() {
-    console.log(logstat)
+    console.log("logstat" + logstat)
     function privateRoute() {
         return logstat ? <Route  path={'/'} component={MainLayout}/> : <Redirect to={ '/login'}/>
     }

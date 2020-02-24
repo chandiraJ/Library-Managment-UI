@@ -6,7 +6,10 @@ import Header from './Header';
 import IssueBook from '../IssueBook/IssueBook';
 import Member from '../Member/Member';
 import Sider from './Sider';
+import User from '../User/User';
 import {Layout} from "antd";
+
+const usertype =  sessionStorage.getItem('membertype');
 
 
 
@@ -26,7 +29,9 @@ export default class LayoutX extends Component {
                         <Route path="/books" component={Book}/>
                         <Route path="/member" component={Member}/>
                         <Route path="/issue" component={IssueBook}/>
+                        <Route path="/user" component={User}/>
                     </Switch>
+
                 </Content>
 
             </div>

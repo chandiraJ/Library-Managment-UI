@@ -155,7 +155,7 @@ export default class Book extends Component {
      * Sends a get request to the http://localhost:8080/library/book/getall API endpoint to Fetch book details from the
      * database.
      */
-    fetchBooks() {
+    fetchBooks = () => {
         this.spin();
         axios({
             method: 'get',

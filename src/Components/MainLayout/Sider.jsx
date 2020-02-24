@@ -8,6 +8,9 @@ import '../../CSS/nav_css.css';
 
 const {Sider} = Layout;
 
+const usertype =  sessionStorage.getItem('membertype');
+
+// const usertype = 'admin';
 
 export default class extends Component {
 
@@ -36,22 +39,28 @@ export default class extends Component {
             <Menu className="thestyle" theme="dark" mode="inline" defaultSelectedKeys={['book']}
                   onClick={this.handleClick}
             >
-                <Menu.Item key="books">
+                {usertype === 'admin' && <Menu.Item key="books">
                     <Icon type="book"/>
                     <span className="nav-text">Books</span>
                 </Menu.Item>
-                <Menu.Item key="member">
+                }
+                {usertype === 'admin' && <Menu.Item key="member">
                     <Icon type="user"/>
                     <span className="nav-text">Members</span>
                 </Menu.Item>
-                <Menu.Item key="issue">
+                }
+                {usertype === 'admin' && <Menu.Item key="issue">
                     <Icon type="video-camera"/>
                     <span className="nav-text">Issue</span>
                 </Menu.Item>
-                <Menu.Item key="m">
+                }
+                {usertype === 'user' && <Menu.Item key="user">
                     <Icon type="video-camera"/>
-                    <span className="nav-text">History</span>
+                    <span className="nav-text">Borrowed Books</span>
                 </Menu.Item>
+                }
+
+
             </Menu>
         </Sider>
 
