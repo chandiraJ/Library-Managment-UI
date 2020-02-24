@@ -1,10 +1,18 @@
 import React, {Component, Fragment} from 'react';
 
 import axios from 'axios';
-import {Form, Input, Row, Col, Button, Table, Modal} from "antd";
+import {Table} from "antd";
 
+/**
+ * Name of the logged user
+ * @type {string}
+ */
 const username = sessionStorage.getItem('name');
 
+/**
+ * Column names for the table
+ * @type {*[]}
+ */
 const columns = [
     {
         title: 'Book ID',
@@ -39,6 +47,10 @@ export default class LayoutX extends Component {
         this.fetchDet();
     }
 
+    /**
+     * Triggers the spinner on the table
+     */
+    spin
     spin = () => {
         this.setState({
             spinner: true
