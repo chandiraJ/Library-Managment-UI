@@ -9,6 +9,15 @@ const {Header} = Layout;
 
 
 export default class extends React.Component {
+
+    /**
+     * Clears the sessionStorage
+     */
+    singOut = () => {
+        sessionStorage.clear();
+        window.location.reload();
+    }
+
     render() {
         return <Header className="thestyle">
             <div className="logo"/>
@@ -31,7 +40,7 @@ export default class extends React.Component {
                 </Menu.Item>
                 <Menu.Item className="floatRight">
                     {/*<Icon type="user" />*/}
-                    <span className="nav-text">Hi, {sessionStorage.getItem("user")}</span>
+                    <span className="nav-text">Hi, {sessionStorage.getItem("name")}</span>
                 </Menu.Item>
             </Menu>
         </Header>

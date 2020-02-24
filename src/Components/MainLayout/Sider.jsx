@@ -44,7 +44,7 @@ export default class extends Component {
                     <Icon type="user"/>
                     <span className="nav-text">Members</span>
                 </Menu.Item>
-                <Menu.Item key="l">
+                <Menu.Item key="issue">
                     <Icon type="video-camera"/>
                     <span className="nav-text">Issue</span>
                 </Menu.Item>

@@ -163,7 +163,7 @@ export default class Book extends Component {
         })
             .then((res) => {
                 let {data} = res.data;
-
+                console.log(res)
                 if (data !== undefined && data.length > 0) {
                     this.setBooksState(data, false);
                 } else {

@@ -9,11 +9,11 @@ import 'antd/dist/antd.css';
 import Login from './Components/Login/Login';
 import MainLayout from './Components/MainLayout/Layout';
 
-// let logstat = sessionStorage.getItem("loging_status");
-let logstat = true;
-// if(logstat === "false"){
-//     logstat = true;
-// }
+let logstat = sessionStorage.getItem("loging_status");
+// let logstat = true;
+if(logstat === "true"){
+    logstat = true;
+}
 
 function App() {
     console.log(logstat)
